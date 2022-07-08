@@ -23,10 +23,23 @@ app.get('*', (req, res) => res.sendFile(path.join(__dirname, './public/index.htm
 
 // API ROUTES
 
+// to save notes and add to db as json
+app.get('/api/notes', (req,res) => {
+    res.sendFile(path.join(__dirname, '/db/db.json'))
+
+});
+
+// to add new notes and add to db as json
+app.post('/api/notes', (req,res) => {
 
 
+});
+
+//to delete notes and remove from db
+app.delete('/api/notes/:id', (req,res) => {
 
 
+});
 
 
 
